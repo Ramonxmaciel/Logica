@@ -1,0 +1,34 @@
+Algoritmo "MEDIA"
+
+Var
+    nota1, nota2, nota3, nota4, faltas, media : real
+
+
+Inicio
+      escreva ("Insira a nota da primeira avaliação:")
+       leia (nota1)
+      escreva ("Insira a nota da segunda avaliação:")
+       leia (nota2)
+      escreva ("Insira a nota da terceira avaliação:")
+       leia (nota3)
+      escreva ("Insira a nota da quarta avaliação:")
+       leia (nota4)
+      escreva ("Informe seu total de faltas:")
+       leia (faltas)
+       
+      media <- (nota1 + nota2 + nota3 + nota4) / 4
+      
+      se (media >= 7) e (faltas < 10) entao
+         escreva ("APROVADO :)")
+      fimse
+      
+      se (media >= 5) e ( media < 7) e (faltas < 10) entao
+          escreva ("RECUPERAÇÃO :0")
+      fimse
+      
+      se (media < 5) ou (faltas >= 10) entao
+         escreva ("REPROVADO :(")
+      fimse
+       
+       
+Fimalgoritmo

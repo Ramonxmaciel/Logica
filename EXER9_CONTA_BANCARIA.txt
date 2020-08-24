@@ -1,0 +1,43 @@
+Algoritmo "exer9_conta_bancaria"
+
+Var
+    numeroc, saldo, deposito, saque, entrada, saida : real
+    operacao: caractere
+
+
+Inicio
+     escreva ("Insira o número da conta:")
+     leia (numeroc)
+     escreva ("Qual o valor do saldo em conta:")
+     leia (saldo)
+     escreva ("Deseja realizar um deposito ou saque:")
+     leia (operacao)
+
+          se (operacao = "deposito") entao
+             escreva ("Informe o valor do deposito: R$")
+             leia (deposito)
+          fimse
+          
+          se (operacao = "saque") entao
+             escreva ("Informe o valor do saque: R$")
+             leia (saque)
+          fimse
+          
+      entrada <- (deposito + saldo)
+      saida <- (saldo - saque)
+      
+          se (operacao = "deposito") e  (entrada > 0) entao
+          escreva ("Seu novo saldo é: R$", entrada)
+          fimse
+          
+          se (operacao = "saque") e  (saida >= 0) entao
+          escreva ("Seu novo saldo é: R$", saida)
+          fimse
+          
+          se (operacao = "saque") e  (saida < 0) entao
+          escreva ("Conta estourada!")
+          fimse
+          
+          
+
+Fimalgoritmo

@@ -1,0 +1,44 @@
+Algoritmo "DESAFIO_COVID19"
+
+Var
+  p : vetor [1..15] de caractere
+  c : vetor [1..15] de inteiro
+  m: vetor [1..15] de inteiro
+  cont : inteiro
+  media1, media2, mediana1, mediana2 : real
+
+Inicio
+      escreval ("RELATÓRIO DE PAISES MAIS AFETADOS PELO COVID-19")
+      escreval ("")
+      
+     para cont de 1 ate 15 faca
+          escreva("Digite o nome do país: ")
+            leia(p[cont])
+          escreva("Digite o número de casos: ")
+           leia(c[cont])
+          escreva("Digite o número de mortes: ")
+           leia(m[cont])
+     fimpara
+
+     escreval ("")
+     
+     para cont de 1 ate 15 faca
+           escreval("País ", p[cont], " - Casos ", c[cont], " - Mortes", m[cont])
+     fimpara
+
+     media1 <- c[1] + c[2] + c[3] + c[4] + c[5] + c[6] + c[7] + c[8] + c[9] + c[10] + c[11] + c[12] + c[13] + c[14] + c[15] / 15
+     media2 <- m[1] + m[2] + m[3] + m[4] + m[5] + m[6] + m[7] + m[8] + m[9] + m[10] + m[11] + m[12] + m[13] + m[14] + m[15] / 15
+
+     mediana1 <- c[8]
+     mediana2 <- m[8]
+
+     escreval ("")
+     escreval ("A média de casos é = ", media1)
+     escreval ("")
+     escreval ("O valor central de casos é = ", mediana1)
+     escreval ("")
+     escreval ("A média de mortes é = ", media2)
+     escreval ("")
+     escreval ("O valor central de mortes é = ", mediana2)
+
+Fimalgoritmo

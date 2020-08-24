@@ -1,0 +1,30 @@
+Algoritmo "APOSENTADORIA"
+
+Var
+   nome, sexo : caractere
+   idade, aposentadoriaf, aposentadoriam : inteiro
+
+Inicio
+     escreva ("Digite o seu nome aqui:")
+      leia (nome)
+     escreva ("Insira a sua idade:")
+      leia (idade)
+     escreva ("Informe o seu sexo (feminino ou masculino):")
+      leia (sexo)
+
+     se (idade < 18) entao
+        escreva ("Você ainda é muito novo!")
+     fimse
+
+     aposentadoriaf <- (62 - idade)
+     aposentadoriam <- (65 - idade)
+
+     se (sexo = "masculino") e (idade >= 18)  entao
+        escreva (nome, ", ainda faltam", aposentadoriam, " anos para você se aposentar")
+     fimse
+     se (sexo = "feminino") e (idade >= 18)  entao
+          escreva (nome, ", ainda faltam", aposentadoriaf, " anos para você se aposentar")
+     fimse
+
+
+Fimalgoritmo

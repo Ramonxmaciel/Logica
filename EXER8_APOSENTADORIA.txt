@@ -1,0 +1,28 @@
+Algoritmo "exer8_aposentadoria"
+
+Var
+   nome, sexo : caractere
+   idade, aposentadoriaf, aposentadoriam : inteiro
+
+Inicio
+     escreva ("Digite o seu nome aqui:")
+     leia (nome)
+     escreva ("Insira a sua idade:")
+     leia (idade)
+     escreva ("Informe o seu sexo (feminino ou masculino):")
+     leia (sexo)
+
+     se (idade < 18) entao
+     escreva ("Você ainda é muito novo!")
+     fimse
+
+     aposentadoriaf <- (62 - idade)
+     aposentadoriam <- (65 - idade)
+     
+     se (sexo = "masculino")  entao
+     escreva (nome, ", ainda faltam", aposentadoriam, " anos para você se aposentar")
+     senao
+     escreva (nome, ", ainda faltam", aposentadoriaf, " anos para você se aposentar")
+     fimse
+
+Fimalgoritmo

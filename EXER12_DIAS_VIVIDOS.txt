@@ -1,0 +1,16 @@
+Algoritmo "exer12_dias_vividos"
+
+Var
+     idade, resultado : inteiro
+      nome: caractere
+Inicio
+     escreva ("Como você se chama? ")
+     leia (nome)
+     escreva ("Qual a sua idade? ")
+     leia (idade)
+     
+     resultado <- (idade * 360)
+     escreva ("Você já viveu:", resultado, " dias")
+
+
+Fimalgoritmo

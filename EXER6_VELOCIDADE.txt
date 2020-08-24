@@ -1,0 +1,19 @@
+Algoritmo "exer6_velocidade"
+
+Var
+    velkm, velms, sp_rj : real
+
+Inicio
+     escreva ("Insira a velocidade, em km/h:")
+     leia (velkm)
+     
+     velms <- (velkm / 3.6)
+     escreva ("A sua velocidade corresponde a", velms, " m/s")
+     
+     // a distância referencial entre SP e RJ é 434 km
+     
+     sp_rj <- (434 /3.6 - velms)
+     escreva (" e ainda faltam percorrer:", sp_rj, " m/s para chegar ao destino final")
+
+
+Fimalgoritmo

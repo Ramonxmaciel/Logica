@@ -1,0 +1,24 @@
+Algoritmo "1.1"
+
+Var
+    vet1 : vetor [1..5] de inteiro
+    vet2 : vetor [1..5] de inteiro
+    cont : inteiro
+
+
+Inicio
+      para cont de 1 ate 5 faca
+           escreva ("Digite o", cont, "º número: ")
+            leia (vet1[cont])
+           vet2[cont] <- vet1[cont]
+      fimpara
+      
+      escreval ("")
+      escreval ("Listagem vetor 1 e vetor 2")
+      escreval ("")
+      
+      para cont de 1 ate 5 faca
+           escreval ("vetor 1: ", vet1[cont], " - ", "Vetor 2: ", vet2[cont])
+      fimpara
+
+Fimalgoritmo

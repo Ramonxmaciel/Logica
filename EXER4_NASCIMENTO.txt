@@ -1,0 +1,30 @@
+Algoritmo "exer4_nascimento"
+
+Var
+   ano1, ano2, idade1, idade2, resultado1, resultado2: inteiro
+   nome1, nome2 : caractere
+
+
+Inicio
+    escreva ("Digite o primeiro nome aqui: ")
+    leia (nome1)
+    escreva ("Informe o seu ano de nascimento: ")
+    leia (ano1)
+    escreva ("Digite o segundo nome aqui: ")
+    leia (nome2)
+    escreva ("Informe o seu ano de nascimento: ")
+    leia (ano2)
+    
+    resultado1 <- (2020 - ano1)
+    resultado2 <- (2020 - ano2)
+    
+    se (resultado1 < resultado2) entao
+    escreva (nome1 + "" + " você é o(a) mais novo(a) com", resultado1, " anos" )
+    escreva (" e ", nome2 + " " + "você é o(a) mais velho(a) com", resultado2, " anos")
+    senao
+    escreva (nome2 + "" + " você é o(a) mais novo(a) com", resultado2, " anos" )
+    escreva (" e ", nome1 + " " + "você é o(a) mais velho(a) com", resultado1, " anos")
+    fimse
+
+
+Fimalgoritmo

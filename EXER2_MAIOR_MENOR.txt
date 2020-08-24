@@ -1,0 +1,19 @@
+Algoritmo "exer2_maior_menor"
+
+Var
+    numero1, numero2 : inteiro
+
+
+Inicio
+     escreva ("Digite o primeiro número:")
+     leia (numero1)
+     escreva ("Digite o segundo número:")
+     leia (numero2)
+
+          se (numero1 > numero2) entao
+             escreva ("o", numero1, " é maior valor e o", numero2, " é o menor")
+          senao
+             escreva ("o", numero2, " é maior valor e o", numero1, " é o menor")
+          fimse
+
+Fimalgoritmo

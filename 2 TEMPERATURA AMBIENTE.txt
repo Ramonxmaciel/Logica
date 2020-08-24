@@ -1,0 +1,20 @@
+Algoritmo "TEMPERATURA AMBIENTE"
+
+Var
+     temperatura : real
+
+
+Inicio
+    escreva ("Quantos graus está fazendo hoje?")
+     leia (temperatura)
+
+    se (temperatura >= 25) entao
+       escreva ("Nossa, está muito quente hoje!")
+    fimse
+
+    se (temperatura <= 25) entao
+       escreva ("O clima parece estar bem agradavel!")
+    fimse
+
+
+Fimalgoritmo

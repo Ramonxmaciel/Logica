@@ -1,0 +1,19 @@
+Algoritmo "exer7_temperatura"
+
+Var
+   temperatura : real
+
+Inicio
+    escreva ("Quantos graus está lá fora?")
+    leia (temperatura)
+    
+    se (temperatura >= 25) entao
+    escreva ("Nossa, está muito quente hoje!")
+    fimse
+    
+    se (temperatura <= 25) entao
+    escreva ("O clima parece estar bem agradavel!")
+    fimse
+
+
+Fimalgoritmo

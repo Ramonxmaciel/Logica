@@ -1,0 +1,28 @@
+Algoritmo "COVID19_MATRIZ"
+
+Var
+
+   pais : vetor [1..15] de caractere
+   casos, morte : vetor[1..15,1..2]de inteiro
+   porcentagem : vetor [1..15] de real
+   contador : inteiro
+
+Inicio
+
+   escreval ("Paises mais afetados")
+
+   para contador de 1 ate 15 faca
+        escreval("Insira o nome do país:")
+         leia (pais[contador])
+        escreval ("Informe o número de casos: ")
+         leia (casos[contador])
+        escreval ("Informe o número de mortes: ")
+         leia (morte [contador])
+   fimpara
+
+   para contador de 1 ate 15 faca
+         porcentagem[contador] <- (morte[contador]*100)/ casos[contador]
+                               escreval ("País: ", pais[contador], " - casos:", casos[contador], " - mortes:", morte[contador], " - porcentagem: ", porcentagem[contador]:4:2,"%")
+   fimpara
+
+Fimalgoritmo

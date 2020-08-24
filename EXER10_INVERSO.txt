@@ -1,0 +1,19 @@
+Algoritmo "exer10_inverso"
+
+Var
+     NumA, NumB, auxiliar : inteiro
+
+
+Inicio
+      escreva ("Digite um número qualquer:")
+      leia (NumA)
+      escreva ("Digite outro número agora:")
+      leia (NumB)
+      
+      auxiliar <- NumA
+      NumA <- NumB
+      NumB <- auxiliar
+      
+      escreva ("A ordem inversa é representada como: ", NumA, ",", NumB)
+
+Fimalgoritmo

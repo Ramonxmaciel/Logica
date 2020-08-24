@@ -1,0 +1,20 @@
+Algoritmo "exer11_media_final"
+
+Var
+    nota1, nota2, nota3, media : real
+
+
+Inicio
+     escreva ("Insira a primeira nota:")
+     leia (nota2)
+     escreva ("Insira a segunda nota:")
+     leia (nota2)
+     escreva ("Insira a terceira nota:")
+     leia (nota3)
+
+     media <- (nota1 * 2 + nota2 * 3 + nota3 * 5) / 10
+     escreva ("Sua média final é:", media)
+     
+     
+
+Fimalgoritmo

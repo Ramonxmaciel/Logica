@@ -1,0 +1,11 @@
+Algoritmo "PARES ENTRE 1 E 100"
+
+Var
+   numero : inteiro
+
+Inicio
+      para numero de 2 ate 100 passo 2 faca
+            escreval(numero)
+      fimpara
+
+Fimalgoritmo

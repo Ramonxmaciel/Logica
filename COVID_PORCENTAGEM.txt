@@ -1,0 +1,24 @@
+Algoritmo "COVID_PORCENTAGEM"
+
+var
+   paises , casos , mortes : vetor [1..15] de real
+   cont: inteiro
+   porcentagem : vetor [1..15] de real
+
+inicio
+   para cont de 1 ate 15 faca
+      escreva ("Digite o nome do país: ")
+       leia (paises[cont])
+      escreva ("Digite o número de casos registrados: ")
+       leia (casos[cont])
+      escreva ("Digite o número de mortes registradas: ")
+       leia (mortes[cont])
+
+      porcentagem[cont] <- casos[cont] - mortes[cont]
+      
+      escreval ("A porcentagem de mortes registradas é de: ", porcentagem[cont] /100 , "%")
+      escreval ("----------------------------")
+      
+   fimpara
+   
+fimalgoritmo

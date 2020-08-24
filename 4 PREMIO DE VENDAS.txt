@@ -1,0 +1,21 @@
+Algoritmo "PREMIO DE VENDAS"
+
+Var
+     fixado, vendas: inteiro
+
+Inicio
+      fixado <- 1000
+      
+     escreva ("Insera a quantidade de vendas feitas aqui:")
+      leia (vendas)
+
+      se (vendas >= fixado) entao
+         escreva ("VOCÊ GANHOU :)")
+      fimse
+
+      se (vendas < fixado) entao
+         escreva ("VOCÊ NÃO GANHOU :(")
+      fimse
+
+
+Fimalgoritmo

@@ -1,0 +1,17 @@
+Algoritmo "IMPAR OU PAR"
+
+Var
+   numero: inteiro
+
+
+Inicio
+     escreva ("Escolha um número:")
+      leia (numero)
+
+    se (numero mod 2) = 0 entao
+       escreva ("o número escolhido é par: ", numero)
+    senao
+         escreva ("o número escolhido é impar: ", numero)
+    fimse
+
+Fimalgoritmo

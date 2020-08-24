@@ -1,0 +1,50 @@
+Algoritmo "COVID_SEQUENCIAL"
+
+var
+   paises , casos , mortes : vetor [1..15] de real
+   cont, posicao: inteiro
+   porcentagem : vetor [1..15] de real
+   dados : inteiro
+
+inicio
+   para cont de 1 ate 15 faca
+      escreva ("Digite o nome do país: ")
+       leia (paises[cont])
+      escreva ("Digite o número de casos registrados: ")
+       leia (casos[cont])
+      escreva ("Digite o número de mortes registradas: ")
+       leia (mortes[cont])
+
+      porcentagem[cont] <- casos[cont] - mortes[cont]
+
+      escreval ("A porcentagem de mortes registradas é de: ", porcentagem[cont] /100 , "%")
+      escreval ("----------------------------")
+   fimpara
+
+   posicao <- 1
+    escreva("Informe o número de casos que você deseja encontrar no relatório: ")
+     leia(dados)
+    enquanto (posicao < 15) e (casos[posicao] <> dados) faca
+            posicao <- posicao + 1
+    fimenquanto
+
+   se dados = casos[posicao] entao
+      escreval("Número de casos encontrado: ", casos[posicao])
+   senao
+        escreval("Número de casos não encontrado!")
+   fimse
+
+   posicao <- 1
+    escreva("Informe o número de mortes que você deseja encontrar no relatório: ")
+     leia(dados)
+
+   enquanto (posicao < 15) e (mortes[posicao] <> dados)faca
+            posicao <- posicao + 1
+   fimenquanto
+
+   se dados = mortes[posicao] entao
+      escreval("Número de mortes encontrado: ", mortes[posicao])
+   senao
+        escreval("Número de mortes não encontrado!")
+   fimse
+fimalgoritmo

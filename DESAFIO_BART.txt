@@ -1,0 +1,20 @@
+Algoritmo "DESAFIO_BART"
+
+Var
+     resposta, frase: caractere
+      vezes: inteiro
+
+Inicio
+     escreva ("Olá Bart! Precisa de ajuda?")
+     leia (resposta)
+     escreva ("Qual frase você tem que escrever hoje?")
+     leia (frase)
+     escreva ("Quantas vezes?")
+     leia (vezes)
+
+     para vezes de 1000 ate 1 passo -1 faca
+     escreva (frase)
+     fimpara
+
+
+Fimalgoritmo

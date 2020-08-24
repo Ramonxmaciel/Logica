@@ -1,0 +1,16 @@
+Algoritmo "SEQUENCIA"
+
+Var
+  contador : real
+
+
+Inicio
+      escreval ("1")
+       contador <- 2
+       
+      enquanto (contador < 21) faca
+               escreval ("1 /", contador)
+                contador <- contador + 1
+      fimenquanto
+
+Fimalgoritmo

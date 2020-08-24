@@ -1,0 +1,17 @@
+Algoritmo "exer5_impar_par"
+
+Var
+   numero: inteiro
+
+
+Inicio
+    escreva ("Digite um número:")
+    leia (numero)
+
+    se (numero mod 2) = 0 entao
+    escreva ("o número escolhido é par: ", numero)
+    senao
+    escreva ("o número escolhido é impar: ", numero)
+    fimse
+
+Fimalgoritmo
